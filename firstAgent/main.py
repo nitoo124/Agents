@@ -36,7 +36,7 @@ assistant = Agent(
 @cl.on_chat_start
 async def handle_chat_start():
     cl.user_session.set("history", [])
-    await cl.Message(content="hello, i am neetu's agent").send()
+    await cl.Message(content="Hi, I’m your virtual assistant! How can I help you today?").send()
 
 
 @cl.on_message
